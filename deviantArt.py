@@ -30,8 +30,8 @@ COLOR_SQUARE_SIZE = 68
 # Sliders settings.
 MIN_OPACITY = 30
 MAX_OPACITY = 118
-MIN_SIZE = 48
-MAX_SIZE = 106
+MIN_SIZE = 5
+MAX_SIZE = 22
     
 log = logbook.Logger('DeviantArt')
 
@@ -115,7 +115,7 @@ def paint(driver, canvas_element, x, y):
         action.move_to_element_with_offset(canvas_element, x, y)
         action.click_and_hold()
         for j in xrange(70):
-            action.move_to_element_with_offset(canvas_element, x + j*2, y)
+            action.move_to_element_with_offset(canvas_element, x + (2 if j % 2 == 0 else -2), y)
         action.release()
         action.perform()
     except MoveTargetOutOfBoundsException:
