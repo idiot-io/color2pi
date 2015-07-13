@@ -27,10 +27,14 @@ then go to terminal and
 ###node 
 #### pi
 needs some trickery to get  node/zmq going on pi
-```wget http://node-arm.herokuapp.com/node_latest_armhf.deb ```
+```wget http://node-arm.herokuapp.com/node_latest_armhf.deb ```  
 ```sudo dpkg -i node_latest_armhf.deb```  
 via [thi guy](http://weworkweplay.com/play/raspberry-pi-nodejs/)
-```npm install zmq servi```
+```sudo npm install zmq servi```
+
+### wifi
+for better conectivity handeling with headless system i use  
+```sudo apt-get install wicd-curses"
 
 #### for windows (WIP)
 get git for windows (comes with msys), this will be your command line.
