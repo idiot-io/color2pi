@@ -12,7 +12,7 @@ then go to terminal and
 
 ###install python and dependencies
 ```sudo apt-get install python-setuptools python-dev```  
-``` sudo easy_install Pillow pyzmq ```  
+``` sudo easy_install Pillow pyzmq loogbook```  
 (this will take a long time, as it needs to compile some C code)
 
 [camera quickstart](http://picamera.readthedocs.org/en/release-1.10/quickstart.html)
